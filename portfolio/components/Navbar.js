@@ -20,7 +20,7 @@ const Navbar = () => {
         <Nav>
             <div>
                 <Link href="/" passHref>
-                    <StyledLink>NXT</StyledLink>
+                    <StyledLink>Kevin Adams Web Development</StyledLink>
                 </Link>
             </div>
             <div>
@@ -29,6 +29,9 @@ const Navbar = () => {
                 </Link>
                 <Link href="/about" passHref>
                     <StyledLink>About</StyledLink>
+                </Link>
+                <Link href="/portfolio" passHref>
+                    <StyledLink>Portfolio</StyledLink>
                 </Link>
                 <Link href="/contact" passHref>
                     <StyledLink>Contact</StyledLink>

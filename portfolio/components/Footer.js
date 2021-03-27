@@ -11,9 +11,14 @@ const FooterSection = styled.div`
 `
 
 const Footer = () => {
+
+    function getCurrentYear() {
+        return new Date().getFullYear()
+    }
+
     return (
         <FooterSection>
-            <p>Next 2021</p>
+            <p>©<a href="https://github.com/kadams34">Kevin Adams</a> | {getCurrentYear()}</p>
         </FooterSection>
     )
 }
