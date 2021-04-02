@@ -36,6 +36,9 @@ const Navbar = () => {
                 <Link href="/contact" passHref>
                     <StyledLink>Contact</StyledLink>
                 </Link>
+                <Link href="/resume" passHref>
+                    <StyledLink>Resume</StyledLink>
+                </Link>
             </div>
         </Nav>
     )

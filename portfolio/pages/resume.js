@@ -18,16 +18,16 @@ const Heading = styled.h1`
   font-weight: 900;
 `
 
-export default function Contact() {
+export default function Resume() {
   return (
-    <motion.div exit={{ x: "100%" }} initial={{ x: "100%" }} animate={{ x: 0 }}>
+    <motion.div exit={{ y: "-100%" }} initial={{ y: "-100%" }} animate={{ y: 0 }}>
       <Head>
-        <title>Contact</title>
+        <title>About</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar></Navbar>
       <Hero>
-        <Heading>Contact</Heading>
+        <Heading>Resume</Heading>
       </Hero>
       <Footer></Footer>
     </motion.div>

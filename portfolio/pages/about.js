@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import  styled from 'styled-components'
+import { motion } from 'framer-motion'
+import Footer from '../components/Footer';
+import Navbar from "../components/Navbar";
 
 const Hero = styled.div`
   height: 90vh;
@@ -17,14 +20,16 @@ const Heading = styled.h1`
 
 export default function About() {
   return (
-    <>
+    <motion.div exit={{ x: "-100%" }} initial={{ x: "-100%" }} animate={{ x: 0 }}>
       <Head>
         <title>About</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
+      <Navbar></Navbar>
       <Hero>
         <Heading>About</Heading>
       </Hero>
-    </>
+      <Footer></Footer>
+    </motion.div>
   )
 }
