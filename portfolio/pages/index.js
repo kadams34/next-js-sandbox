@@ -1,30 +1,27 @@
-import  styled from 'styled-components'
 import { motion } from 'framer-motion'
 import Footer from '../components/Footer';
 import Navbar from "../components/Navbar";
+import { Container, Row, Col } from 'react-bootstrap'
 
-const Hero = styled.div`
-  height: 85vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff
-`
 
-const Heading = styled.h1`
-  color: #000;
-  font-size: 10rem;
-  font-weight: 900;
-`
+
 
 export default function Home() {
   return (
     <>
     <motion.div exit={{ scale: 0 }} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: .4 }}>
       <Navbar></Navbar>
-      <Hero>
-          <Heading>KEVIN ADAMS</Heading>
-      </Hero>
+      <div>
+        <Container>
+          <Row>
+            <Col>
+              <h1 className="display-1">KEVIN ADAMS</h1>
+              <h1 className="display-3">Full Stack Web Developer</h1>
+              <h1 className="display-4">ABQ, NM</h1>
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <Footer></Footer>
     </motion.div>
     </>
