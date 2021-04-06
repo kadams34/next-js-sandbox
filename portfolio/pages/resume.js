@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Navbar from "../components/Navbar";
 
 const Hero = styled.div`
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,11 +20,7 @@ const Heading = styled.h1`
 
 export default function Resume() {
   return (
-    <motion.div exit={{ y: "-100%" }} initial={{ y: "-100%" }} animate={{ y: 0 }}>
-      <Head>
-        <title>About</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <motion.div exit={{ y: "-100%" }} initial={{ y: "-100%" }} animate={{ y: 0 }} transition={{ duration: .3 }}>
       <Navbar></Navbar>
       <Hero>
         <Heading>Resume</Heading>

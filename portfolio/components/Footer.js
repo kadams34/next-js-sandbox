@@ -9,6 +9,9 @@ const FooterSection = styled.div`
     justify-content: center;
     align-items: center;
 `
+const StyledLink = styled.a`
+    color: white;
+`
 
 const Footer = () => {
 
@@ -18,7 +21,7 @@ const Footer = () => {
 
     return (
         <FooterSection>
-            <p>©<a href="https://github.com/kadams34">Kevin Adams</a> | {getCurrentYear()}</p>
+            <p>©<StyledLink href="https://github.com/kadams34">Kevin Adams</StyledLink> | {getCurrentYear()}</p>
         </FooterSection>
     )
 }

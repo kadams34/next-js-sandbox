@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 import Navbar from "../components/Navbar";
 
 const Hero = styled.div`
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,11 +20,7 @@ const Heading = styled.h1`
 
 export default function Contact() {
   return (
-    <motion.div exit={{ x: "100%" }} initial={{ x: "100%" }} animate={{ x: 0 }}>
-      <Head>
-        <title>Contact</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <motion.div exit={{ x: "100%" }} initial={{ x: "100%" }} animate={{ x: 0 }} transition={{ duration: .3 }}>
       <Navbar></Navbar>
       <Hero>
         <Heading>Contact</Heading>

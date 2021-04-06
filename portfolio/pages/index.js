@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import  styled from 'styled-components'
 import { motion } from 'framer-motion'
 import Footer from '../components/Footer';
@@ -21,11 +20,7 @@ const Heading = styled.h1`
 export default function Home() {
   return (
     <>
-    <motion.div exit={{ scale: 0 }} initial={{ scale: 0 }} animate={{ scale: 1 }}>
-      <Head>
-        <title>Home</title>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
+    <motion.div exit={{ scale: 0 }} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: .4 }}>
       <Navbar></Navbar>
       <Hero>
           <Heading>KEVIN ADAMS</Heading>
