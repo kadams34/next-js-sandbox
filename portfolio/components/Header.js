@@ -3,15 +3,16 @@ import Link from 'next/link'
 
 
 
-const Navbar = () => {
+const Header = () => {
     return (
-        <nav>
+        <>
+        <nav className="navbar navbar-dark bg-dark">
             <div>
                 <Link href="/" passHref>
                     <a>Kevin Adams Web Development</a>
                 </Link>
             </div>
-            <div>
+            <div className="ml-auto">
                 <Link href="/" passHref>
                     <a>Home</a>
                 </Link>
@@ -29,7 +30,8 @@ const Navbar = () => {
                 </Link>
             </div>
         </nav>
+        </>
     )
 }
 
-export default Navbar
+export default Header

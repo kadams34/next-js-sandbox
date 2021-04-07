@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import Footer from '../components/Footer';
-import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import { Container, Row, Col } from 'react-bootstrap'
 
 
@@ -8,9 +8,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <>
     <motion.div exit={{ scale: 0 }} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: .4 }}>
-      <Navbar></Navbar>
+      <Header></Header>
       <div>
         <Container>
           <Row>
@@ -24,6 +23,5 @@ export default function Home() {
       </div>
       <Footer></Footer>
     </motion.div>
-    </>
   )
 }
